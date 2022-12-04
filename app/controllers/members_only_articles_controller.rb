@@ -1,4 +1,4 @@
-lass MembersOnlyArticlesController < ApplicationController
+class MembersOnlyArticlesController < ApplicationController
   before_action :authorize
   rescue_from ActiveRecord::RecordNotFound, with: :record_not_found
 
